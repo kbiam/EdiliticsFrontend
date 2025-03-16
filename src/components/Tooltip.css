@@ -1,0 +1,39 @@
+.tooltip {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 12px;
+    z-index: 10;
+    pointer-events: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    min-width: 120px;
+    max-width: 200px;
+    transition: opacity 0.2s ease;
+  }
+  
+  .App.dark .tooltip {
+    background-color: rgba(40, 40, 40, 0.95);
+    border: 1px solid #555;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .tooltip-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3px;
+  }
+  
+  .App.dark .tooltip-title {
+    border-bottom: 1px solid #444;
+  }
+  
+  .tooltip-value,
+  .tooltip-category,
+  .tooltip-date,
+  .tooltip-percentage {
+    margin-top: 3px;
+    text-align: left;
+  }

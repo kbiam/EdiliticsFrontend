@@ -1,0 +1,93 @@
+.control-panel {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .App.dark .control-panel {
+    background-color: #2a2a2a;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (min-width: 768px) {
+    .control-panel {
+        width: 250px;
+        margin-right: 1rem;
+        margin-bottom: 0;
+      }
+    }
+    
+    .control-section {
+      margin-bottom: 1.5rem;
+    }
+    
+    .control-section h3 {
+      margin-top: 0;
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+    
+    .App.dark .control-section h3 {
+      border-bottom: 1px solid #444;
+    }
+    
+    .chart-type-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .chart-type-buttons button {
+      background-color: #e9ecef;
+      color: #495057;
+    }
+    
+    .App.dark .chart-type-buttons button {
+      background-color: #343a40;
+      color: #e9ecef;
+    }
+    
+    .chart-type-buttons button.active {
+      background-color: #007bff;
+      color: white;
+    }
+    
+    .add-data-btn {
+      width: 100%;
+      background-color: #28a745;
+      color: white;
+    }
+    
+    .App.dark .add-data-btn {
+      background-color: #218838;
+    }
+    
+    .category-filters {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: flex-start;
+    }
+    
+    .filter-checkbox {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+    }
+    
+    .interaction-tips {
+      margin: 0;
+      padding-left: 1.2rem;
+      font-size: 0.85rem;
+      color: #666;
+      text-align: left;
+    }
+    
+    .App.dark .interaction-tips {
+      color: #aaa;
+    }
